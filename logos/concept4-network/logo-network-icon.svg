@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <style>
+      .cls-node { fill: #2563eb; }
+      .cls-line { stroke: #2563eb; stroke-width: 1.5; opacity: 0.4; }
+    </style>
+  </defs>
+  <g id="icon" transform="translate(7, 12)">
+    <line class="cls-line" x1="10" y1="30" x2="25" y2="15" />
+    <line class="cls-line" x1="10" y1="30" x2="25" y2="40" />
+    <line class="cls-line" x1="25" y1="15" x2="45" y2="10" />
+    <line class="cls-line" x1="25" y1="15" x2="40" y2="25" />
+    <line class="cls-line" x1="25" y1="40" x2="40" y2="25" />
+    <line class="cls-line" x1="40" y1="25" x2="45" y2="10" />
+    <circle class="cls-node" cx="10" cy="30" r="4" />
+    <circle class="cls-node" cx="25" cy="15" r="5" />
+    <circle class="cls-node" cx="25" cy="40" r="3" />
+    <circle class="cls-node" cx="40" cy="25" r="6" />
+    <circle class="cls-node" cx="45" cy="10" r="4" />
+  </g>
+</svg>
