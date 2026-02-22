@@ -265,6 +265,70 @@ header {
     font-weight: 300;
 }
 
+.phil-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--accent-blue);
+    background: var(--accent-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+.phil-item:hover .phil-icon {
+    transform: translateY(-5px) scale(1.1);
+    background: var(--accent-blue);
+    color: white;
+}
+
+.phil-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Impact Section */
+.impact {
+    margin: 4rem auto 10rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.impact-title {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.impact-card {
+    padding: 1rem;
+}
+
+.impact-value {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.04em;
+}
+
+.impact-label {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
 /* Footer */
 footer {
     padding: 6rem 0 4rem;
@@ -304,6 +368,18 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
     }
 }
 

@@ -2,39 +2,53 @@ const translations = {
     en: {
         nav_wishlist: "Join Wishlist",
         hero_badge: "Early Access",
-        hero_title_part1: "Networking,",
-        hero_title_part2: "Evolved.",
-        hero_subtext: "We're building a more thoughtful way to connect. Join the wishlist for a seat in the most exclusive professional growth circle.",
+        hero_title_part1: "Turn every comment into",
+        hero_title_part2: "an Opportunity.",
+        hero_subtext: "Scale your reach on LinkedIn and 4x your conversions with strategic engagement. Building a more thoughtful way to connect.",
         wishlist_placeholder: "Your business email",
         wishlist_button: "Reserve my spot",
-        success_title: "Added to the circle.",
-        success_body: "You'll be the first to know when we open the doors.",
-        phil1_title: "Quality over Noise",
-        phil1_body: "AI that understands context, not just keywords. Build real rapport, not automated spam.",
-        phil2_title: "Network Intelligence",
-        phil2_body: "Visualize connections you didn't know you had. Optimize your reach with data-driven intent.",
-        phil3_title: "Time Integrity",
-        phil3_body: "Spend less time scrolling and more time closing. The tools you need, right where you work.",
-        footer_copy: "&copy; 2024 LG Grow. Designed for human connection.",
+        success_title: "Welcome to the Inner Circle.",
+        success_body: "You'll be the first to know when we launch the strategic growth engine.",
+        phil1_title: "Exponential Reach",
+        phil1_body: "Reach beyond your 1st degree. Comments grow your network by 12% organically through the golden hour.",
+        phil2_title: "Qualified Pipeline",
+        phil2_body: "Generated leads with 3-5x higher conversion rates. Start natural conversations that warm up your outreach.",
+        phil3_title: "Authority & Expertise",
+        phil3_body: "Position yourself as an industry expert. Thoughtful comments generate 2-3 connection requests for every 10 posts.",
+        impact_title: "Strategic Impact by the Numbers",
+        impact_stat1_label: "Conversion Rate",
+        impact_stat1_value: "3-5x Higher",
+        impact_stat2_label: "Organic Reach",
+        impact_stat2_value: "+12%",
+        impact_stat3_label: "Lead Pipeline",
+        impact_stat3_value: "23%",
+        footer_copy: "&copy; 2024 Linkedin Grow. Strategic engagement for professionals.",
         footer_privacy: "Privacy"
     },
     it: {
         nav_wishlist: "Unisciti alla Wishlist",
         hero_badge: "Accesso Anticipato",
-        hero_title_part1: "Networking,",
-        hero_title_part2: "Evoluto.",
-        hero_subtext: "Stiamo costruendo un modo più ponderato per connettersi. Unisciti alla wishlist per un posto nell'esclusiva cerchia di crescita professionale.",
+        hero_title_part1: "Trasforma ogni commento in",
+        hero_title_part2: "un'Opportunità.",
+        hero_subtext: "Scala la tua portata su LinkedIn e quadruplica le conversioni con l'engagement strategico. Un modo più intelligente di connettersi.",
         wishlist_placeholder: "La tua email aziendale",
         wishlist_button: "Riserva il mio posto",
-        success_title: "Aggiunto alla cerchia.",
-        success_body: "Sarai il primo a sapere quando apriremo le porte.",
-        phil1_title: "Qualità oltre il Rumore",
-        phil1_body: "IA che comprende il contesto, non solo le parole chiave. Costruisci rapporti reali, non spam automatizzato.",
-        phil2_title: "Intelligenza di Rete",
-        phil2_body: "Visualizza connessioni che non sapevi di avere. Ottimizza la tua portata con intenti basati sui dati.",
-        phil3_title: "Integrità del Tempo",
-        phil3_body: "Passa meno tempo a scorrere e più tempo a concludere. Gli strumenti necessari, proprio dove lavori.",
-        footer_copy: "&copy; 2024 LG Grow. Progettato per la connessione umana.",
+        success_title: "Benvenuto nella Cerchia Stretta.",
+        success_body: "Sarai il primo a scoprire l'impatto del growth engine strategico.",
+        phil1_title: "Reach Esponenziale",
+        phil1_body: "Vai oltre il primo grado. I commenti aumentano la tua rete del 12% organicamente sfruttando la golden hour.",
+        phil2_title: "Pipeline Qualificata",
+        phil2_body: "Genera lead con tassi di conversione 3-5x superiori. Avvia conversazioni naturali che scaldano l'outreach.",
+        phil3_title: "Autorità e Expertise",
+        phil3_body: "Posizionati come esperto del settore. Commenti di valore generano 2-3 richieste di connessione ogni 10 interazioni.",
+        impact_title: "Impatto Strategico in Numeri",
+        impact_stat1_label: "Tasso di Conversione",
+        impact_stat1_value: "3-5x Superiore",
+        impact_stat2_label: "Reach Organica",
+        impact_stat2_value: "+12%",
+        impact_stat3_label: "Pipeline di Lead",
+        impact_stat3_value: "23%",
+        footer_copy: "&copy; 2024 Linkedin Grow. Engagement strategico per professionisti.",
         footer_privacy: "Privacy"
     }
 };
@@ -194,5 +208,58 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }, 600);
         });
+    }
+
+    // Impact Numbers Animation
+    const impactValues = document.querySelectorAll('.impact-value');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const finalValue = target.innerText;
+                const numericValue = parseFloat(finalValue.replace(/[^\d.-]/g, ''));
+                const isPercent = finalValue.includes('%');
+                const isMultiplier = finalValue.includes('x');
+
+                animateValue(target, 0, numericValue, 2000, isPercent, isMultiplier);
+                observer.unobserve(target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    impactValues.forEach(val => observer.observe(val));
+
+    function animateValue(obj, start, end, duration, isPercent, isMultiplier) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            let current = Math.floor(progress * (end - start) + start);
+
+            let displayValue = current;
+            if (isPercent) displayValue = (end > 0 ? '+' : '') + current + '%';
+            if (isMultiplier) displayValue = (current === end ? end : current) + '-5x Higher'; // Simplified for the 3-5x case
+
+            // Special handling for the specific strings
+            if (end === 12 && isPercent) displayValue = '+' + current + '%';
+            if (end === 23 && isPercent) displayValue = current + '%';
+            if (end === 3 && isMultiplier) displayValue = current + '-5x Higher';
+
+            obj.innerText = displayValue;
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            } else {
+                // Ensure final value is exact
+                obj.innerText = finalValueFromData(end, isPercent, isMultiplier);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    function finalValueFromData(val, isPercent, isMultiplier) {
+        if (val === 12 && isPercent) return "+12%";
+        if (val === 23 && !isMultiplier) return "23%";
+        if (val === 3 && isMultiplier) return "3-5x Higher";
+        return val;
     }
 });
