@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Grow | Networking, Evolved</title>
+    <meta name="description" content="A cleaner, more intelligent way to grow your professional network on LinkedIn.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Urbanist:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Interactive Background -->
+    <canvas id="networkCanvas"></canvas>
+    <div class="vignette"></div>
+
+    <header>
+        <div class="container container-nav">
+            <div class="logo">
+                <span class="logo-accent" data-i18n="logo_part1">Linkedin</span> <span
+                    data-i18n="logo_part2">Grow</span>
+            </div>
+            <nav>
+                <a href="#wishlist" class="btn btn-nav" data-i18n="nav_wishlist">Join Wishlist</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container container-hero">
+                <div class="badge-clean fade-in stagger-1" data-i18n="hero_badge">Early Access</div>
+                <h1 class="reveal-text stagger-2">
+                    <span data-i18n="hero_title_part1">Networking,</span> <br>
+                    <span class="text-accent" data-i18n="hero_title_part2">Evolved.</span>
+                </h1>
+                <p class="hero-subtext fade-in-up stagger-3" data-i18n="hero_subtext">We're building a more thoughtful
+                    way to connect. Join the wishlist for a seat in the most exclusive professional growth circle.</p>
+
+                <div class="wishlist-section glass-light fade-in-up stagger-4" id="wishlist">
+                    <form class="wishlist-form" id="waitlistForm">
+                        <div class="input-wrapper">
+                            <input type="email" placeholder="Your business email"
+                                data-i18n-placeholder="wishlist_placeholder" required>
+                            <button type="submit" class="btn btn-primary" data-i18n="wishlist_button">Reserve my
+                                spot</button>
+                        </div>
+                    </form>
+                    <div class="success-message hidden" id="successMessage">
+                        <div class="success-icon">✦</div>
+                        <h4 data-i18n="success_title">Added to the circle.</h4>
+                        <p data-i18n="success_body">You'll be the first to know when we open the doors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophies">
+            <div class="container grid-philosophy">
+                <div class="phil-item fade-in-up">
+                    <span class="num">01</span>
+                    <h4 data-i18n="phil1_title">Quality over Noise</h4>
+                    <p data-i18n="phil1_body">AI that understands context, not just keywords. Build real rapport, not
+                        automated spam.</p>
+                </div>
+                <div class="phil-item fade-in-up" style="animation-delay: 0.1s;">
+                    <span class="num">02</span>
+                    <h4 data-i18n="phil2_title">Network Intelligence</h4>
+                    <p data-i18n="phil2_body">Visualize connections you didn't know you had. Optimize your reach with
+                        data-driven intent.</p>
+                </div>
+                <div class="phil-item fade-in-up" style="animation-delay: 0.2s;">
+                    <span class="num">03</span>
+                    <h4 data-i18n="phil3_title">Time Integrity</h4>
+                    <p data-i18n="phil3_body">Spend less time scrolling and more time closing. The tools you need, right
+                        where you work.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container container-footer">
+            <p data-i18n="footer_copy">&copy; 2024 LG Grow. Designed for human connection.</p>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_privacy">Privacy</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
