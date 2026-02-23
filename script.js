@@ -185,28 +185,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMessage = document.getElementById('successMessage');
 
     if (waitlistForm) {
-        waitlistForm.addEventListener('submit', (e) => {
+        waitlistForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // Simulation
-            const wrapper = waitlistForm.querySelector('.input-wrapper');
-            wrapper.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
-            wrapper.style.opacity = '0';
-            wrapper.style.transform = 'translateY(10px)';
+            const emailInput = document.getElementById('email-input');
+            const email = emailInput.value;
 
-            setTimeout(() => {
-                waitlistForm.classList.add('hidden');
-                successMessage.classList.remove('hidden');
-
-                successMessage.style.opacity = '0';
-                successMessage.style.transform = 'translateY(10px)';
-
-                requestAnimationFrame(() => {
-                    successMessage.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
-                    successMessage.style.opacity = '1';
-                    successMessage.style.transform = 'translateY(0)';
+            try {
+                const res = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email: email })
                 });
-            }, 600);
+
+                if (res.ok || res.status === 204) {
+                    // Success UI transition
+                    const wrapper = waitlistForm.querySelector('.input-wrapper');
+                    wrapper.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+                    wrapper.style.opacity = '0';
+                    wrapper.style.transform = 'translateY(10px)';
+
+                    setTimeout(() => {
+                        waitlistForm.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+
+                        successMessage.style.opacity = '0';
+                        successMessage.style.transform = 'translateY(10px)';
+
+                        requestAnimationFrame(() => {
+                            successMessage.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+                            successMessage.style.opacity = '1';
+                            successMessage.style.transform = 'translateY(0)';
+                        });
+                    }, 600);
+                } else {
+                    const errorData = await res.json();
+                    console.error('Brevo API Error:', errorData);
+                    alert('Something went wrong, please try again.');
+                }
+            } catch (error) {
+                console.error('Network Error:', error);
+                alert('Network error, please try again.');
+            }
         });
     }
 
