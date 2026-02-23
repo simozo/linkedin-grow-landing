@@ -22,7 +22,7 @@ const translations = {
         impact_stat2_value: "+12%",
         impact_stat3_label: "Lead Pipeline",
         impact_stat3_value: "23%",
-        footer_copy: "&copy; 2024 Linkedin Grow. Strategic engagement for professionals.",
+        footer_copy: "&copy; 2026 Linkedin Grow. Strategic engagement for professionals.",
         footer_privacy: "Privacy"
     },
     it: {
@@ -48,7 +48,7 @@ const translations = {
         impact_stat2_value: "+12%",
         impact_stat3_label: "Pipeline di Lead",
         impact_stat3_value: "23%",
-        footer_copy: "&copy; 2024 Linkedin Grow. Engagement strategico per professionisti.",
+        footer_copy: "&copy; 2026 Linkedin Grow. Engagement strategico per professionisti.",
         footer_privacy: "Privacy"
     }
 };
