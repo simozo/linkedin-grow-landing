@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Glowfy orb icon dark">
+  <title>Glowfy</title>
+  <rect width="80" height="80" fill="#1a1a24"/>
+  <defs>
+    <radialGradient id="o4d-grad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%"   stop-color="#93c5fd"/>
+      <stop offset="45%"  stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <clipPath id="o4d-clip">
+      <circle cx="40" cy="40" r="28"/>
+    </clipPath>
+  </defs>
+  <!-- Stronger glow on dark bg -->
+  <circle cx="40" cy="40" r="36" fill="#2563eb" opacity="0.2"/>
+  <!-- Main orb -->
+  <circle cx="40" cy="40" r="28" fill="url(#o4d-grad)"/>
+  <!-- Growth curve -->
+  <path d="M21,53 Q24,30 38,27 Q52,24 57,38"
+        fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"
+        clip-path="url(#o4d-clip)" opacity="0.65"/>
+  <circle cx="57" cy="38" r="3.5" fill="white" opacity="0.85" clip-path="url(#o4d-clip)"/>
+  <!-- Glass highlight -->
+  <ellipse cx="33" cy="30" rx="9" ry="5.5" fill="white" opacity="0.22" transform="rotate(-20 33 30)"/>
+  <ellipse cx="32" cy="29" rx="4" ry="2.5" fill="white" opacity="0.38" transform="rotate(-20 32 29)"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 70" role="img" aria-label="Glowfy logo badge variant">
+  <title>Glowfy</title>
+  <defs>
+    <linearGradient id="g2h-grad" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <!-- Badge (50x50, top-left padded so it's vertically centered) -->
+  <rect x="10" y="10" width="50" height="50" rx="14" fill="url(#g2h-grad)"/>
+  <rect x="10" y="10" width="50" height="20" rx="14" fill="white" opacity="0.13"/>
+  <!-- G lettermark -->
+  <text x="35" y="47"
+        font-family="'Outfit', 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="30" font-weight="600" letter-spacing="-1.5"
+        fill="white" text-anchor="middle">G</text>
+  <!-- Sparkle dot -->
+  <circle cx="49" cy="20" r="3" fill="white" opacity="0.4"/>
+  <circle cx="49" cy="20" r="1.4" fill="white" opacity="0.8"/>
+  <!-- Wordmark -->
+  <text x="80" y="48"
+        font-family="'Outfit', 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="36" font-weight="300" letter-spacing="-1.5"
+        fill="#1a1a24">glow<tspan fill="#2563eb" font-weight="500">fy</tspan></text>
+</svg>

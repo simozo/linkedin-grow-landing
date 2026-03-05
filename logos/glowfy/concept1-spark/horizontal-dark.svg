@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 70" role="img" aria-label="Glowfy logo">
+  <title>Glowfy</title>
+  <rect width="250" height="70" fill="#1a1a24"/>
+  <defs>
+    <radialGradient id="s1hd-core" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </radialGradient>
+  </defs>
+  <!-- Icon -->
+  <circle cx="35" cy="35" r="24" fill="#2563eb" opacity="0.18"/>
+  <!-- Cardinal rays -->
+  <line x1="35" y1="13" x2="35" y2="7"  stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="35" y1="57" x2="35" y2="63" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="13" y1="35" x2="7"  y2="35" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="57" y1="35" x2="63" y2="35" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Diagonal rays -->
+  <line x1="47" y1="23" x2="52" y2="18" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="23" y1="23" x2="18" y2="18" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="47" y1="47" x2="52" y2="52" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="23" y1="47" x2="18" y2="52" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Central node -->
+  <circle cx="35" cy="35" r="13" fill="url(#s1hd-core)"/>
+  <circle cx="30" cy="30" r="4" fill="white" opacity="0.4"/>
+  <circle cx="30" cy="30" r="1.8" fill="white" opacity="0.7"/>
+  <!-- Wordmark on dark: white + lighter blue -->
+  <text x="80" y="48"
+        font-family="'Outfit', 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="36" font-weight="300" letter-spacing="-1.5"
+        fill="#fcfcfd">glow<tspan fill="#60a5fa" font-weight="500">fy</tspan></text>
+</svg>

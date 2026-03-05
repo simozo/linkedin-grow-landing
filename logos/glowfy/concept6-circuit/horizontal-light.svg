@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 70" role="img" aria-label="Glowfy logo circuit variant">
+  <title>Glowfy</title>
+  <!-- Circuit G scaled to fit 70px tall layout (path within left 70px zone) -->
+  <!-- G path coordinates recalculated: fits x:10-60, y:9-61 (52px tall, 50px wide) -->
+  <path d="M60,9 L10,9 L10,61 L60,61 L60,38 L40,38"
+        fill="none" stroke="#2563eb" stroke-width="3.5"
+        stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- Junction pads (4×4) -->
+  <rect x="58" y="7"  width="4" height="4" rx="1" fill="#2563eb"/>
+  <rect x="8"  y="7"  width="4" height="4" rx="1" fill="#2563eb"/>
+  <rect x="8"  y="59" width="4" height="4" rx="1" fill="#2563eb"/>
+  <rect x="58" y="59" width="4" height="4" rx="1" fill="#2563eb"/>
+  <rect x="58" y="36" width="4" height="4" rx="1" fill="#2563eb"/>
+  <!-- Active endpoint -->
+  <rect x="38" y="36" width="4" height="4" rx="1" fill="#60a5fa"/>
+  <circle cx="40" cy="38" r="2.5" fill="#93c5fd" opacity="0.55"/>
+  <circle cx="40" cy="38" r="1.2" fill="white" opacity="0.9"/>
+  <!-- Wordmark: GLOWFY uppercase, geometric bold -->
+  <text x="82" y="46"
+        font-family="'Space Grotesk', 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="26" font-weight="700" letter-spacing="2.5"
+        fill="#1a1a24">GLOW<tspan fill="#2563eb">FY</tspan></text>
+</svg>

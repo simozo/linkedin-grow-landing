@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 70" role="img" aria-label="Glowfy logo chevron variant">
+  <title>Glowfy</title>
+  <!-- Chevrons scaled to 70px height, compressed horizontally -->
+  <!-- Chevron 1 (faded) -->
+  <polyline points="8,18 18,35 8,52"
+            fill="none" stroke="#2563eb" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"
+            opacity="0.22"/>
+  <!-- Chevron 2 (medium) -->
+  <polyline points="20,18 30,35 20,52"
+            fill="none" stroke="#2563eb" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"
+            opacity="0.52"/>
+  <!-- Chevron 3 (lead) -->
+  <polyline points="32,18 44,35 32,52"
+            fill="none" stroke="#2563eb" stroke-width="3.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Glow node -->
+  <circle cx="44" cy="35" r="6"   fill="#2563eb" opacity="0.16"/>
+  <circle cx="44" cy="35" r="4"   fill="#2563eb"/>
+  <circle cx="44" cy="35" r="1.8" fill="#93c5fd"/>
+  <!-- Wordmark: Glowfy ultra-bold, tight tracking, tech feel -->
+  <text x="66" y="48"
+        font-family="'Inter', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="36" font-weight="800" letter-spacing="-1"
+        fill="#1a1a24">Glow<tspan fill="#2563eb">fy</tspan></text>
+</svg>

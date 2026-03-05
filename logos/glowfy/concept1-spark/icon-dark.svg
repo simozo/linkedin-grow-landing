@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" role="img" aria-label="Glowfy icon">
+  <title>Glowfy</title>
+  <rect width="70" height="70" fill="#1a1a24"/>
+  <defs>
+    <radialGradient id="s1d-core" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </radialGradient>
+  </defs>
+  <!-- Stronger halo on dark bg -->
+  <circle cx="35" cy="35" r="28" fill="#2563eb" opacity="0.18"/>
+  <!-- Cardinal rays (lighter blue on dark) -->
+  <line x1="35" y1="11" x2="35" y2="5"  stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="35" y1="59" x2="35" y2="65" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="11" y1="35" x2="5"  y2="35" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="59" y1="35" x2="65" y2="35" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Diagonal rays -->
+  <line x1="49" y1="21" x2="54" y2="16" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="21" y1="21" x2="16" y2="16" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="49" y1="49" x2="54" y2="54" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="21" y1="49" x2="16" y2="54" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Central node -->
+  <circle cx="35" cy="35" r="14" fill="url(#s1d-core)"/>
+  <!-- Glass highlight -->
+  <circle cx="30" cy="30" r="4.5" fill="white" opacity="0.4"/>
+  <circle cx="30" cy="30" r="2"   fill="white" opacity="0.7"/>
+</svg>

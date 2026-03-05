@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="Glowfy logo prompt variant">
+  <title>Glowfy</title>
+  <defs>
+    <linearGradient id="p5h-bg" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e2a42"/>
+      <stop offset="100%" stop-color="#0d1526"/>
+    </linearGradient>
+  </defs>
+  <!-- Terminal badge 50×50 centered vertically -->
+  <rect x="10" y="10" width="50" height="50" rx="13" fill="url(#p5h-bg)"/>
+  <rect x="10" y="10" width="50" height="50" rx="13" fill="#2563eb" opacity="0.08"/>
+  <line x1="10" y1="27" x2="60" y2="27" stroke="white" stroke-width="0.5" opacity="0.08"/>
+  <!-- >_ inside badge -->
+  <text x="35" y="43"
+        font-family="'Space Mono', 'JetBrains Mono', 'Courier New', monospace"
+        font-size="20" font-weight="700"
+        text-anchor="middle">
+    <tspan fill="#2563eb">&#62;</tspan><tspan fill="#93c5fd">_</tspan>
+  </text>
+  <!-- Wordmark: > glowfy in monospace -->
+  <text x="80" y="46"
+        font-family="'Space Mono', 'JetBrains Mono', 'Courier New', monospace"
+        font-size="22" font-weight="400">
+    <tspan fill="#2563eb" font-weight="700">&#62;</tspan><tspan fill="#1a1a24" dx="10">glowfy</tspan>
+  </text>
+</svg>

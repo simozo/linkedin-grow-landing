@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 80" role="img" aria-label="Glowfy Diamond Core logo - Horizontal Light">
+  <title>Glowfy - Diamond Core Concept</title>
+  <defs>
+    <linearGradient id="diamond-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon Section: Crystalline/Faceted Diamond Core -->
+  <g transform="translate(15, 15)">
+    <!-- Base Shape -->
+    <path d="M25 0 L50 25 L25 50 L0 25 Z" fill="url(#diamond-grad)" opacity="0.9"/>
+    
+    <!-- Facets -->
+    <path d="M25 0 L25 50" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+    <path d="M0 25 L50 25" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+    <path d="M25 0 L12 25 L25 50 L38 25 Z" fill="#ffffff" opacity="0.1"/>
+    
+    <!-- Internal Glow -->
+    <circle cx="25" cy="25" r="8" fill="#60a5fa" opacity="0.3" filter="blur(3px)"/>
+    <circle cx="25" cy="25" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Typography: Sharp, sophisticated, uppercase -->
+  <g transform="translate(85, 52)">
+    <text font-family="'Outfit', sans-serif" 
+          font-size="30" font-weight="700" letter-spacing="1.5" fill="#1a1a24">
+      G<tspan fill="#2563eb">L</tspan>OWFY
+    </text>
+  </g>
+</svg>

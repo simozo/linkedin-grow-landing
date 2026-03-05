@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Glowfy Apex Pillar logo - Icon Light">
+  <title>Glowfy - Icon</title>
+  <defs>
+    <linearGradient id="apex-grad-icon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(35, 25)">
+    <path d="M25 5 L45 55 L5 55 Z" fill="url(#apex-grad-icon)"/>
+    <path d="M25 20 L35 45 L15 45 Z" fill="#ffffff" opacity="0.2"/>
+    <circle cx="25" cy="5" r="8" fill="#60a5fa" opacity="0.4" filter="blur(4px)"/>
+    <circle cx="25" cy="5" r="2" fill="#ffffff"/>
+  </g>
+</svg>

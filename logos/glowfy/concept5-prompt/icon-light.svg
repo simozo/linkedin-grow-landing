@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Glowfy terminal icon">
+  <title>Glowfy</title>
+  <defs>
+    <linearGradient id="p5-bg" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e2a42"/>
+      <stop offset="100%" stop-color="#0d1526"/>
+    </linearGradient>
+  </defs>
+  <!-- Terminal dark badge -->
+  <rect x="4" y="4" width="72" height="72" rx="18" fill="url(#p5-bg)"/>
+  <!-- Blue inner glow tint -->
+  <rect x="4" y="4" width="72" height="72" rx="18" fill="#2563eb" opacity="0.08"/>
+  <!-- Title bar separator -->
+  <line x1="4" y1="24" x2="76" y2="24" stroke="white" stroke-width="0.6" opacity="0.08"/>
+  <!-- >_ prompt, centered -->
+  <text x="40" y="53"
+        font-family="'Space Mono', 'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+        font-size="28" font-weight="700"
+        text-anchor="middle">
+    <tspan fill="#2563eb">&#62;</tspan><tspan fill="#93c5fd">_</tspan>
+  </text>
+</svg>

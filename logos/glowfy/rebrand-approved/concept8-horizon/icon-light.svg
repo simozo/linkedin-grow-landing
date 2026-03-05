@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Glowfy Strategic Horizon logo - Icon Light">
+  <title>Glowfy - Icon</title>
+  <defs>
+    <linearGradient id="horizon-grad-icon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#2563eb" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(30, 40)">
+    <path d="M5 40 L55 40" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    <path d="M10 40 Q30 5 50 40" fill="#2563eb" opacity="0.05"/>
+    <path d="M15 40 Q30 15 45 40" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="30" cy="28" r="10" fill="#60a5fa" opacity="0.1" filter="blur(3px)"/>
+    <circle cx="30" cy="28" r="4" fill="#2563eb"/>
+    <circle cx="30" cy="28" r="1.5" fill="#ffffff"/>
+  </g>
+</svg>

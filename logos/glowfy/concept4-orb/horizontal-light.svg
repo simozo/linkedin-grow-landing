@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 70" role="img" aria-label="Glowfy logo orb variant">
+  <title>Glowfy</title>
+  <defs>
+    <radialGradient id="o4h-grad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%"   stop-color="#93c5fd"/>
+      <stop offset="45%"  stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <clipPath id="o4h-clip">
+      <circle cx="35" cy="35" r="24"/>
+    </clipPath>
+  </defs>
+  <!-- Orb (r=24, center 35,35) -->
+  <circle cx="35" cy="35" r="30" fill="#2563eb" opacity="0.08"/>
+  <circle cx="35" cy="35" r="24" fill="url(#o4h-grad)"/>
+  <!-- Growth curve inside -->
+  <path d="M17,46 Q20,26 32,23 Q44,21 49,33"
+        fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"
+        clip-path="url(#o4h-clip)" opacity="0.65"/>
+  <circle cx="49" cy="33" r="3" fill="white" opacity="0.85" clip-path="url(#o4h-clip)"/>
+  <!-- Glass highlight -->
+  <ellipse cx="28" cy="27" rx="7" ry="4" fill="white" opacity="0.22" transform="rotate(-20 28 27)"/>
+  <!-- Wordmark -->
+  <text x="76" y="48"
+        font-family="'Outfit', 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="36" font-weight="300" letter-spacing="-1.5"
+        fill="#1a1a24">glow<tspan fill="#2563eb" font-weight="500">fy</tspan></text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Glowfy Diamond Core logo - Icon Light">
+  <title>Glowfy - Icon</title>
+  <defs>
+    <linearGradient id="diamond-grad-icon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(35, 35)">
+    <path d="M25 0 L50 25 L25 50 L0 25 Z" fill="url(#diamond-grad-icon)" opacity="0.9"/>
+    <path d="M25 0 L25 50" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+    <path d="M0 25 L50 25" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="25" cy="25" r="10" fill="#60a5fa" opacity="0.3" filter="blur(4px)"/>
+    <circle cx="25" cy="25" r="3" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Glowfy chevron flow icon">
+  <title>Glowfy</title>
+  <!-- Ambient glow centered on lead chevron tip -->
+  <circle cx="55" cy="40" r="22" fill="#2563eb" opacity="0.07"/>
+  <!-- Chevron 1: most faded (trailing) -->
+  <polyline points="16,24 28,40 16,56"
+            fill="none" stroke="#2563eb" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"
+            opacity="0.22"/>
+  <!-- Chevron 2: medium -->
+  <polyline points="29,24 41,40 29,56"
+            fill="none" stroke="#2563eb" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"
+            opacity="0.52"/>
+  <!-- Chevron 3: lead, full opacity + glow node at tip -->
+  <polyline points="42,24 55,40 42,56"
+            fill="none" stroke="#2563eb" stroke-width="3.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Glow node at lead tip -->
+  <circle cx="55" cy="40" r="7" fill="#2563eb" opacity="0.18"/>
+  <circle cx="55" cy="40" r="4.5" fill="#2563eb"/>
+  <circle cx="55" cy="40" r="2" fill="#93c5fd"/>
+</svg>

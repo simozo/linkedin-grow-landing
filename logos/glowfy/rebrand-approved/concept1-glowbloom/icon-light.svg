@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Glowfy Glow Bloom logo - Icon Light">
+  <title>Glowfy - Icon</title>
+  <defs>
+    <radialGradient id="glow-grad-icon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="petal-grad-icon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(30, 30)">
+    <!-- Halo -->
+    <circle cx="30" cy="30" r="28" fill="#2563eb" opacity="0.05"/>
+    
+    <!-- Bloom Petals/Heart Shape -->
+    <path d="M30 45 C20 45 10 35 10 25 C10 15 20 10 30 20 C40 10 50 15 50 25 C50 35 40 45 30 45 Z" 
+          fill="url(#petal-grad-icon)" opacity="0.9"/>
+    
+    <!-- Core Glow -->
+    <circle cx="30" cy="27" r="10" fill="url(#glow-grad-icon)" opacity="0.6"/>
+    <circle cx="30" cy="27" r="3" fill="#ffffff" opacity="0.8"/>
+  </g>
+</svg>

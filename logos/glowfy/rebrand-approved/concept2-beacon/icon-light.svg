@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Glowfy Personal Beacon logo - Icon Light">
+  <title>Glowfy - Icon</title>
+  <defs>
+    <linearGradient id="beacon-grad-icon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="soft-glow-icon">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(35, 35)">
+    <path d="M25 5 C15 5 5 15 5 25 C5 35 15 45 25 45 L40 45 L40 25 L25 25 L25 32 L33 32 L33 38 L25 38 C18 38 12 32 12 25 C12 18 18 12 25 12 C32 12 38 18 38 25" 
+          fill="none" stroke="url(#beacon-grad-icon)" stroke-width="4" stroke-linecap="round"/>
+    
+    <circle cx="45" cy="15" r="6" fill="#60a5fa" filter="url(#soft-glow-icon)"/>
+    <circle cx="45" cy="15" r="2" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Glowfy Personal Beacon logo - Icon Dark">
+  <title>Glowfy - Icon</title>
+  <rect width="120" height="120" fill="#1a1a24" rx="24"/>
+  <defs>
+    <linearGradient id="beacon-grad-icon-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="soft-glow-icon-dark">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(35, 35)">
+    <path d="M25 5 C15 5 5 15 5 25 C5 35 15 45 25 45 L40 45 L40 25 L25 25 L25 32 L33 32 L33 38 L25 38 C18 38 12 32 12 25 C12 18 18 12 25 12 C32 12 38 18 38 25" 
+          fill="none" stroke="url(#beacon-grad-icon-dark)" stroke-width="4" stroke-linecap="round"/>
+    
+    <circle cx="45" cy="15" r="7" fill="#ffffff" opacity="0.2" filter="url(#soft-glow-icon-dark)"/>
+    <circle cx="45" cy="15" r="3" fill="#ffffff"/>
+  </g>
+</svg>

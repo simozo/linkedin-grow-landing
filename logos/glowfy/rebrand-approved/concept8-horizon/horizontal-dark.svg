@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 80" role="img" aria-label="Glowfy Strategic Horizon logo - Horizontal Dark">
+  <title>Glowfy - Strategic Horizon Concept</title>
+  <rect width="250" height="80" fill="#1a1a24"/>
+  <defs>
+    <linearGradient id="horizon-grad-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fcfcfd" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#60a5fa" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fcfcfd" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <path d="M0 40 L50 40" stroke="url(#horizon-grad-dark)" stroke-width="0.5" opacity="0.3"/>
+    <path d="M5 40 L45 40" stroke="#fcfcfd" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+    
+    <path d="M10 40 Q25 5 40 40" fill="#60a5fa" opacity="0.15"/>
+    <path d="M15 40 Q25 15 35 40" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.8"/>
+    
+    <circle cx="25" cy="28" r="12" fill="#ffffff" opacity="0.2" filter="blur(4px)"/>
+    <circle cx="25" cy="28" r="4" fill="#ffffff"/>
+  </g>
+
+  <g transform="translate(85, 52)">
+    <text font-family="'Outfit', sans-serif" 
+          font-size="34" font-weight="200" letter-spacing="3" fill="#fcfcfd">
+      GLOW<tspan font-weight="600" fill="#60a5fa">FY</tspan>
+    </text>
+  </g>
+</svg>

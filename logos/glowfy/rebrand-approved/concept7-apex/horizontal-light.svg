@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 80" role="img" aria-label="Glowfy Apex Pillar logo - Horizontal Light">
+  <title>Glowfy - Apex Pillar Concept</title>
+  <defs>
+    <linearGradient id="apex-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <clipPath id="pillar-clip">
+      <path d="M5 45 L25 5 L45 45 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Icon Section: Architectural/Monumental G -->
+  <g transform="translate(15, 10)">
+    <!-- Shadow/Depth -->
+    <path d="M22 10 L42 50 L2 50 Z" fill="#2563eb" opacity="0.05"/>
+    
+    <!-- Main Pillar Structure -->
+    <path d="M20 5 L40 55 L0 55 Z" fill="url(#apex-grad)"/>
+    
+    <!-- Internal Cut (Stylized G edge) -->
+    <path d="M20 20 L30 45 L10 45 Z" fill="#ffffff" opacity="0.2"/>
+    
+    <!-- The "Glow" at the apex -->
+    <circle cx="20" cy="5" r="8" fill="#60a5fa" opacity="0.4" filter="blur(4px)"/>
+    <circle cx="20" cy="5" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Typography: High-end, spaced, authoritative -->
+  <g transform="translate(85, 52)">
+    <text font-family="'Outfit', serif" 
+          font-size="32" font-weight="600" letter-spacing="2" fill="#1a1a24" text-transform="uppercase">
+      GLOW<tspan font-weight="300" fill="#2563eb">FY</tspan>
+    </text>
+  </g>
+</svg>
